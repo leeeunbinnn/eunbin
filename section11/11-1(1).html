@@ -6,123 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --margin:16px;
+        }
+        
         *{
             margin: 0;
             padding: 0;
         }
-        a{
-            text-decoration: none;
 
-        }
         li{
             list-style: none;
         }
-        img{
-            display: block;
-            border: none;
-        }
-        body{
-            font-family: 'verdana';
-            font-size: 14px;
-            color: black;
-            line-height: 28px;        
-        }
 
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
 
         header{
-            width: 1000px;
+            border: 1px solid black;
             height: 100px;
-            margin: 0 auto;
-            margin-top: 10px;
-            border: 2px solid black;
-            overflow: hidden;
-            box-sizing: border-box;
+            margin-top: var(--margin);
+            
         }
 
-        header h1{
+        h1{
+            float: left;
+            height: 100px;
+            background-color: yellow;
             width: 200px;
             line-height: 100px;
-            background-color: yellow;
-            float: left;
             text-align: center;
         }
-
+        
         nav{
             float: right;
-            overflow: hidden;
-            position: relative;
+            background-color: antiquewhite;
+            height: 100px;
         }
-
         nav ul{
-            overflow: hidden;
-            background-color: antiquewhite;
-        }
-
-        nav ul:nth-of-type(1) li{
-            float: left;
-            padding-left: 20px;
             background-color: yellow;
-            line-height: 30px;
+            overflow: hidden;
         }
 
-        nav ul:nth-of-type(2) li{
+        nav li{
             float: left;
-            padding-left: 20px;
-            background-color: orange;
+            padding: 0 4px;
+            margin-right: 0 8px;
             line-height: 30px;
+
+        }
+        nav> ul:last-child{
             margin-top: 40px;
+            background-color: orange;
         }
-
-        #main{
+        main{
             width: 1000px;
-            overflow: hidden;
-            margin: 10px auto;
+            margin: 0 auto;
         }
 
-        #main section{
-            width: 700px;
-            overflow: hidden;
-            float: left;
-        }
+        main > section {
+            width: 738px;
 
-        #main section article{
-            width: 700px;
-            border: 2px solid black;
-            overflow: hidden;
-            padding: 20px;
-            margin-bottom: 10px;
+        }
+        
+        main > section > article{
+            height: 150px;
+            border: 1px solid black;
             box-sizing: border-box;
-        }
-
-        article>h2{
-            background-color: antiquewhite;
-        }
-
-        aside{
-            width: 280px;
-            float: right;
-            overflow: hidden;
-            border: 2px solid black;
-            padding: 20px;
-            box-sizing: border-box;
-
-        }
-
-        aside .bannerbox{
-            background-color: gray;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        footer{
-            width: 1000px;
-            height: 50px;
-            line-height: 50px;
-            margin: 10px auto;
-            border: 2px solid black;
-            text-align: center;
-            box-sizing: border-box;
-            background-color: antiquewhite;
+            margin-top: var(--margin);
         }
 
 
@@ -130,24 +83,28 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>WEB-logo</h1>
-        <nav>
-            <ul>
-                <li>menu-1</li>
-                <li>menu-1</li>
-                <li>menu-1</li>
-                <li>menu-1</li>
-            </ul>
+    <div class="wrap">
+        <header>
+            <h1>WEB-logo</h1>
+            <nav>
+                <ul>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                </ul>
+    
+                <ul>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                </ul>
+            </nav>
+        </header>
 
-            <ul>
-                <li>menu-2</li>
-                <li>menu-2</li>
-                <li>menu-2</li>
-                <li>menu-2</li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+
 
     <main>
         <section>
@@ -157,29 +114,28 @@
                     ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
                 </p>
             </article>
-
+    
             <article>
                 <h2>Main Article</h2>
                 <p>
                     ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
                 </p>
             </article>
-
+    
             <article>
                 <h2>Main Article</h2>
                 <p>
                     ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
                 </p>
             </article>
-
         </section>
 
         <aside>
-            <h2>Right aside</h2>
+            <h3>Right aside</h3>
             <p>
                 ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.
             </p>
-            <label for="email">Mail</label>
+            <label for="email"></label>
             <input type="email" />
             <button>mailto</button>
             <div class="bannerbox">
@@ -188,9 +144,10 @@
             </div>
         </aside>
     </main>
-    
+   
     <footer>
         <p>HTML5 COPYRIGHT</p>
     </footer>
+
 </body>
 </html>
