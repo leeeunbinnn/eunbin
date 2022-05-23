@@ -244,4 +244,5 @@ footer{
 .corp-right a {
     color: var(--font-footer-light);
     text-decoration: underline;
+    display: inline-block;
 }
