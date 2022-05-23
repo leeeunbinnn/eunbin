@@ -74,8 +74,9 @@ h1 figure {
 
 #main-title {
     height: 100vh;
-    background-image: url(/img/socar/main_visual_fullscreen.jpg);
+    background-image: url(/img/img/main_visual_fullscreen.jpg);
     position: relative;
+    z-index: -2;
 }
 
 .main-title-heading {
