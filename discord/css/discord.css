@@ -1,18 +1,77 @@
-header{
-    width: 100%;
+:root{
+    --main-color:#5865F2;
+}
+
+.header{
     height: 71px;
-    position: fixed;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
 }
-h1 figure{
-    width: 124px;
-    margin-top: 25px;
-    margin-left: 60px;
-    position: relative;
+
+.nav-wrapper{
+    color: var(--main-color);
 }
-.button{
-    width: 500px;
-    height: 200px;
-    background-color: yellow;
+
+.nav-wrapper>*{
+    font-size: 14px;
+}
+
+.nav-wrapper a{
+    color: var(--main-color);
+}
+
+.nav-left{
+    display: inline-block;
+}
+
+.nav-li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+
+#main-content{
+    background-image: url(../img/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 60px;
+}
+
+.main-content-heading{
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
     text-align: center;
+    line-height: 200px;
+}
+
+.search-container{
+    position: relative;
+    margin: 0 auto;
+    width: 610px;
+    height: 45px;
+}
+
+.search-figure svg{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 15px;
+    top: 30%;
+}
+
+
+.search-input{
+    width: 610px;
+    height: 45px;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
 }
