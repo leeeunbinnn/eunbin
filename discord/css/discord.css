@@ -2,7 +2,8 @@
     --main-color:#5865F2;
     --main-font-color:#4f545c;
     --main-card-color:#68727e;
-    --footer-background-color:#4f545c;
+    --footer-background-color:#23272a;
+    --footer-icon-color: #929395;
 }
 
 .header{
@@ -169,17 +170,29 @@
     color: #4f545c;
 }
 
-.footer-top{
-    margin-top: 100px;
-    height: 287px;
+
+
+/* footer */
+footer{
     background-color: var(--footer-background-color);
-    display: flex;
-    align-items: row center;
+    overflow: hidden;
 }
 
-.footer-top-content {
-    display: inline-block;
-    height: 42px;
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top-content{
+    height: 140px;
+    width: 250px;
+    position: relative;
+}
+
+.footer-top-content a{
+    position: absolute;
+    top: 47px;
 }
 
 .footer-more{
@@ -188,8 +201,50 @@
     border-radius: 25px;
     background-color: #3BA55C;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     color: white;
     text-align: center;
-    line-height: 38px;
+    line-height: 39px;
 }
+
+.footer-icons{
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-size: 814px 145px;
+    width: 814px;
+    height: 145px;
+    position: relative;
+}
+
+.icon-position{
+    display: inline-block;
+    position: absolute;
+    top: 62px;
+    color: var(--footer-icon-color);
+}
+
+.icon-position svg{
+    color: var(--footer-icon-color);
+}
+
+.icon-position:nth-child(1){
+    left: 91px;
+}
+
+.icon-position:nth-child(2){
+    left: 379px;
+}
+
+.icon-position:nth-child(3){
+    left: 474px;
+}
+
+.icon-position:nth-child(4){
+    left: 626px;
+}
+
+.icon-position:nth-child(5){
+    left: 697px;
+}
+
+
