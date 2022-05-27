@@ -35,6 +35,14 @@
     margin-right: 30px;
 }
 
+.nav-li:hover{
+    text-decoration: underline;
+}
+
+.nav-li a:hover{
+    text-decoration: underline;
+}
+
 
 
 #main-content{
@@ -100,6 +108,10 @@
 
 #intro p a{
     color: var(--main-color);
+}
+
+#intro p a:hover{
+    text-decoration: underline;
 }
 
 .card-container{
@@ -260,6 +272,10 @@ footer{
     opacity: .5;
 }
 
+.icon-position:hover{
+    opacity: 1;
+}
+
 .icon-position:nth-child(1){
     left: 91px;
 }
@@ -312,6 +328,10 @@ footer{
     line-height: 15px;
 }
 
+.footer-list a:hover{
+    opacity: 1;
+}
+
 .hire-{
     color: white;
     opacity: .3;
@@ -321,4 +341,9 @@ footer{
     color: #3BA55C;
     opacity: 1;
     font-size: 15px;
+}
+
+@media  screen and (max) {
+
+    
 }
