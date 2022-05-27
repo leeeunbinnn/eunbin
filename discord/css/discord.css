@@ -174,7 +174,39 @@
     color: #4f545c;
 }
 
+#customer{
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+}
 
+.customer-box{
+    background-color: #5865f2;
+    width: 134px;
+    height: 45px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.customer-box figure{
+    display: inline-block;
+    fill: white;
+    position: absolute;
+    top: 13px;
+    left: 17px;
+}
+
+.customer-box p{
+    font-weight: 700;
+    font-size: ;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    position: absolute;
+    top: 8px;
+    left: 45px;
+}
 
 /* footer */
 footer{
@@ -225,6 +257,7 @@ footer{
     display: inline-block;
     position: absolute;
     top: 62px;
+    opacity: .5;
 }
 
 .icon-position:nth-child(1){
