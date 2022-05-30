@@ -1,0 +1,157 @@
+:root{
+    --background-color:#f6f8fa;
+    --login-green:#21c531;
+    --language-color:#666666;
+    --main-color:#222222;
+    --main-content-color:#444444;
+    --intro-more:#2ecc71;
+}
+
+.header{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 0 12px;
+}
+
+.header h1 {
+    width: 100px;
+    margin: 15px;
+    background-image: url(../img/spr_intro_2x.png);
+    background-position: 4px 241px;
+    background-size: 278px;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.header-nav{
+    margin-top: 16px;
+}
+
+.header-nav a{
+    margin-left: 35px;
+}
+
+.language{
+    display: inline-block;
+}
+
+.language a{
+    color: var(--language-color);
+}
+
+.language a:hover{
+    text-decoration: underline;
+}
+
+.header-register{
+    color: var(--main-color);
+}
+
+.header-register:hover{
+    text-decoration: underline;
+}
+
+.language-box{
+    width: 0px;
+    height: 0px;
+    border-top: 3px solid #777;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    z-index: 3;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.login{
+    width: 88px;
+    height: 35px;
+    background-color: var(--login-green);
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* main */
+#intro{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding-top: 80px;
+}
+
+.intro-left img{
+    width: 540px;
+}
+
+.intro-right{
+    margin: 35px;
+}
+
+.intro-right h2{
+    font-size: 48px;
+    color: var(--main-color);
+    font-weight: 500px;
+    margin-top: 80px;
+    line-height: 55px;
+}
+
+.intro-content{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-content-color);
+}
+
+.intro-button{
+    margin-top: 23px;
+}
+
+.intro-button div{
+    width: 340px;
+    height: 54px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+}
+
+.intro-login{
+    background-color: var(--login-green);
+    color:white;
+}
+
+.register{
+    background-color: white;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.intro-more{
+    margin-top: 30px;
+    color: var(--main-content-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.intro-more a{
+    color: var(--intro-more);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+}

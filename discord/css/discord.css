@@ -210,7 +210,6 @@
 
 .customer-box p{
     font-weight: 700;
-    font-size: ;
     color: white;
     text-align: center;
     display: inline-block;
@@ -341,9 +340,4 @@ footer{
     color: #3BA55C;
     opacity: 1;
     font-size: 15px;
-}
-
-@media  screen and (max) {
-
-    
 }
