@@ -57,5 +57,8 @@ a{
 body{
 	font-size: 14px;
 	font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols;
-	overflow: scroll;
+}
+strong{
+    color: #333;
+    font-weight: 400;
 }

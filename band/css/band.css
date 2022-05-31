@@ -5,6 +5,7 @@
     --main-color:#222222;
     --main-content-color:#444444;
     --intro-more:#2ecc71;
+    --band-list-background:#eef0f3;
 }
 
 .header{
@@ -21,6 +22,11 @@
     background-image: url(../img/spr_intro_2x.png);
     background-position: 4px 241px;
     background-size: 278px;
+}
+
+.link{
+    display: block;
+    height: 100%;
 }
 
 .hidden {
@@ -154,4 +160,159 @@
     font-size: 13px;
     font-weight: 700;
     margin-left: 10px;
+}
+
+.introduce-top{
+    background-image: url(../img/bg_intro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.introduce-top h2{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.introduce-top p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.introduce-bottom{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-bottom li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+
+.introduce-bottom img{
+    width: 300px;
+    height: 160px;
+}
+
+.introduce-bottom h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.introduce-bottom p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-content-color);
+    margin-top: 14px;
+    line-height: 22px;
+}
+
+#band-list{
+    background-color: var(--band-list-background);
+}
+
+.list-heading{
+    padding-top: 50px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.list-heading h2{
+    color: var(--main-color);
+    font-weight: 400px;
+    display: inline-block;
+    font-size: 24px;
+    color: #222;
+}
+
+.list-heading a{
+    float: right;
+    color: var(--main-color);
+}
+
+.list-heading a:hover{
+    text-decoration: underline;
+}
+
+.bands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.bands li{
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.bands-content{
+    display: flex;
+}
+
+.bands-content img{
+    width: 93px;
+    height: 93px;
+    margin-right: 15px;
+}
+
+.bands-about{
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.bands-about h3{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.about-first{
+    color: var(--main-content-color);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.about-second{
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 8px;
+}
+
+.bands-more{
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+    line-height: 24px;
+    margin-top: 6px;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    z-index: 2;
+}
+
+.more-strong{
+    color: #333;
+    font-weight: 400;
 }
