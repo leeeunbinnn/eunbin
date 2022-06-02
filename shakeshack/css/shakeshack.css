@@ -1,0 +1,28 @@
+.header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navmenu figure{
+    display: inline-block;
+}
+
+.navmenu img{
+    height: 12px;
+}
+
+.nav-location{
+    margin-right: 70px;
+}
+
+.nav-delivery{
+    margin-right: 70px;
+}
+
+.logo img{
+    width: 232px;
+}
