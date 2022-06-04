@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converse</title>
+
+    <link rel="stylesheet" href="./css/converse.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
     <header>
         <div id="header-top">
-            <div class="language">
+            <div class="language-wrapper">
                 <a href="#">
                     <figure>
                         <img src="./img/korea.png" alt="">
                     </figure>
+                    <p class="language">KR<span class="language-span">ㅣ</span>한국어</p>
                 </a>
-                <span>
-                    KRㅣ한국어
-                </span>
             </div>
             <div class="header-slide">
                 <a href="#">
@@ -25,19 +26,19 @@
                         <img src="./img/top_banner_arrow_left.png" alt="">
                     </figure>
                 </a>
-                <div class="slide1">
+                <div class="slide-wrapper slide1">
                     <a href="#">
                         <h2>NEW</h2>
                         <p>PEANUTS 출시</p>
                     </a>
                 </div>
-                <div class="slide2">
+                <div class="slide-wrapper slide2">
                     <a href="#">
                         <h2>NEW</h2>
                         <p>DRKSHDW TURBOWPN 출시</p>
                     </a>
                 </div>
-                <div class="slide3">
+                <div class="slide-wrapper slide3">
                     <a href="#">
                         <h2>NOTICE</h2>
                         <p>로그인이 어려우실 경우 FAQ를 참조해주세요</p>
@@ -52,15 +53,14 @@
         </div>
         <div id="header-bottom">
             <div class="nav-left">
-                <h1>
+                <div class="logo">
                     <a href="#">
-                        <div>
-                            <figure></figure>
-                            <figure></figure>
-                        </div>
+                        <figure>
+                            <img src="./img/converse-logo.png" alt="">
+                        </figure>
                     </a>
-                </h1>
-                <nav>
+                </div>
+                <nav class="left-menu">
                     <ul>
                         <li>
                             <a href="#">신발</a>
@@ -77,6 +77,7 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="nav-right">
                 <nav>
                     <ul>
@@ -429,6 +430,38 @@
                         <li>Jordan</li>
                     </a>
                 </ul>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="footer-left">
+                <div class="company">
+                    <a href="#"><span>(유)컨버스코리아</span></a>
+                    <span>대표 주형준</span>
+                    <span>개인정보책임 주형준</span>
+                    <span>사업자등록번호 220-88-74818</span>
+                    <br>
+
+                    <span>통신판매업 신고번호 제2016-서울강남-00478호</span>
+                    <a href="#"><span>통신판매업자 신원정보 확인</span></a>
+                    <br>
+
+                    <p>주소 서울특별시 강남구 테헤란로 152 (역삼동) 강남파이낸스센터 32층</p>
+                    <p>고객상담팀: 080-987-0182 (상담시간 월-금 : AM 09:00 - PM 05:30, 주말/공휴일 휴무)</p>
+                    <p><a href="#">conversekorea@converse.co.kr</a>(24시간 접수 가능)</p>
+                </div>
+                <div class="copyright">2020 Converse Korea LLC. All Rights Reserved.</div>
+            </div>
+            <div class="footer-right">
+                <p>
+                    KG이니시스 구매안전 서비스
+                    <br>
+                    고객님은 안전거래를 위해 현금 등으로 결제시
+                    <br>
+                    저희 쇼핑몰이 가입한 PG에스크로 구매안전서비스를 이용하실 수 있습니다.
+                    <br>
+                    결제대금예치업 등록번호 02-006-00013
+                    <a href="#">서비스 가입사실 확인</a>
+                </p>
             </div>
         </div>
     </footer>
