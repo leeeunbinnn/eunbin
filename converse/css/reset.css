@@ -48,10 +48,17 @@ table {
 }
 
 a{
+	display: block;
 	text-decoration: none;
 	color: #000000;
 }
 
 *{
 	font-family: "proxima-nova","Nanum Gothic",Arial,sans-serif;
+	box-sizing: border-box;
+}
+
+main{
+	width: 1440px;
+	margin: 0 auto;
 }
