@@ -50,3 +50,11 @@ table {
 a{
 	text-decoration: none;
 }
+
+main{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+	font-family: 'Roboto', '맑은 고딕','Malgun Gothic', 'NanumGothicWeb', 'NanumMyeongjoWeb', AppleGothic, sans-serif, Verdana, Arial, Helvetica, sans-serif;
+}

@@ -42,7 +42,19 @@
     font-size: 14px;
     font-weight: 400;
     height: 70px;
+    width: 550px;
+    margin: 0 auto;
     overflow: hidden;
+}
+
+.slide-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 560px;
+    text-align: center;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
 
 .slide-wrapper h2{
@@ -50,25 +62,18 @@
 }
 
 .slide1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     z-index: 0;
 }
 
 .slide2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     z-index: 1;
 }
 
 .slide3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     z-index: 2;
 }
+
+
 
 
 /* header-bottom */
