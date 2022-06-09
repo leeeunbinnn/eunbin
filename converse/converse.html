@@ -21,34 +21,42 @@
                 </a>
             </div>
             <div class="header-slide">
-                <a href="#">
-                    <figure>
-                        <img src="./img/top_banner_arrow_left.png" alt="">
-                    </figure>
-                </a>
-                <div class="slide-wrapper slide1">
-                    <a href="#">
-                        <h2>NEW</h2>
-                        <p>PEANUTS 출시</p>
-                    </a>
-                </div>
-                <div class="slide-wrapper slide2">
-                    <a href="#">
-                        <h2>NEW</h2>
-                        <p>DRKSHDW TURBOWPN 출시</p>
-                    </a>
-                </div>
-                <div class="slide-wrapper slide3">
-                    <a href="#">
-                        <h2>NOTICE</h2>
-                        <p>로그인이 어려우실 경우 FAQ를 참조해주세요</p>
-                    </a>
-                </div>
-                <a href="#">
-                    <figure>
-                        <img src="./img/top_banner_arrow_right.png" alt="">
-                    </figure>
-                </a>
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                
+                <ul class="slidewrap">
+                    <li>
+                        <a>
+                            <label for="slide3" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NEW</h2>
+                                <p>PEANUTS 출시</p>
+                            </div>    
+                            <label for="slide2" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide1" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NEW</h2>
+                                <p>DRKSHDW TURBOWPN 출시</p> 
+                            </div>
+                            <label for="slide3" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide2" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NOTICE</h2>
+                                <p>로그인이 어려우실 경우 FAQ를 참조해주세요</p>
+                            </div>
+                            <label for="slide1" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="header-bottom">
@@ -61,6 +69,7 @@
                     </a>
                 </div>
                 <nav class="left-menu">
+
                     <ul>
                         <li>
                             <a href="#">신발</a>
@@ -91,21 +100,21 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 61" id="Layer_61"><path class="cls-1" d="M10,20a1,1,0,0,1-1-.8L6.66,7.41A3,3,0,0,0,3.72,5H2A1,1,0,0,1,2,3H3.72a5,5,0,0,1,4.9,4L11,18.8A1,1,0,0,1,10.2,20Z"/><path class="cls-1" d="M11,27H9.14a4.14,4.14,0,0,1-.38-8.26l18.41-1.67L28.78,9H8A1,1,0,0,1,8,7H30a1,1,0,0,1,.77.37A1,1,0,0,1,31,8.2l-2,10a1,1,0,0,1-.89.8L8.94,20.74A2.13,2.13,0,0,0,9.14,25H11a1,1,0,0,1,0,2Z"/><path class="cls-1" d="M26,30a4,4,0,1,1,4-4A4,4,0,0,1,26,30Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,26,24Z"/><path class="cls-1" d="M14,30a4,4,0,1,1,4-4A4,4,0,0,1,14,30Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,14,24Z"/><path class="cls-1" d="M23,27H17a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"/></g></svg>
+                                    <?xml version="1.0" ?><svg id="Outlined" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g id="Fill"><path d="M10,24a3,3,0,1,0,3,3A3,3,0,0,0,10,24Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,10,28Z"/><path d="M22,24a3,3,0,1,0,3,3A3,3,0,0,0,22,24Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,22,28Z"/><path d="M6.78,6,6.35,4.27A3,3,0,0,0,3.44,2H2V4H3.44a1,1,0,0,1,1,.76L8,19.24H8l.37,1.49A3,3,0,0,0,11.31,23H25V21H11.31a1,1,0,0,1-1-.76l-.12-.5L25,16.25a3,3,0,0,0,2.23-2.19l2-8.06Zm18.55,7.58a1,1,0,0,1-.75.73L9.73,17.8,7.28,8H26.72Z"/></g></svg>
                                 </figure>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <figure>
-                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#101820;}</style></defs><title/><g data-name="Layer 54" id="Layer_54"><path class="cls-1" d="M16,28.72a3,3,0,0,1-2.13-.88L3.57,17.54a8.72,8.72,0,0,1-2.52-6.25,8.06,8.06,0,0,1,8.14-8A8.06,8.06,0,0,1,15,5.68l1,1,.82-.82h0a8.39,8.39,0,0,1,11-.89,8.25,8.25,0,0,1,.81,12.36L18.13,27.84A3,3,0,0,1,16,28.72ZM9.15,5.28A6.12,6.12,0,0,0,4.89,7a6,6,0,0,0-1.84,4.33A6.72,6.72,0,0,0,5,16.13l10.3,10.3a1,1,0,0,0,1.42,0L27.23,15.91A6.25,6.25,0,0,0,29,11.11a6.18,6.18,0,0,0-2.43-4.55,6.37,6.37,0,0,0-8.37.71L16.71,8.8a1,1,0,0,1-1.42,0l-1.7-1.7a6.28,6.28,0,0,0-4.4-1.82Z"/></g></svg>
+                                    <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Stock_cut" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><path d="M28.343,17.48L16,29  L3.657,17.48C1.962,15.898,1,13.684,1,11.365v0C1,6.745,4.745,3,9.365,3h0.17c2.219,0,4.346,0.881,5.915,2.45L16,6l0.55-0.55  C18.119,3.881,20.246,3,22.465,3h0.17C27.255,3,31,6.745,31,11.365v0C31,13.684,30.038,15.898,28.343,17.48z" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
                                 </figure>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <figure>
-                                    <svg style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guide"/><g id="Layer_2"><g><path d="M8,2C4.69,2,2,4.69,2,8s2.69,6,6,6s6-2.69,6-6S11.31,2,8,2z M8,13c-2.76,0-5-2.24-5-5s2.24-5,5-5s5,2.24,5,5    S10.76,13,8,13z"/><path d="M8.43,4.55C7.47,4.31,6.4,4.92,6.11,5.86C6.02,6.13,6.17,6.41,6.43,6.49s0.54-0.06,0.63-0.33C7.2,5.72,7.74,5.41,8.2,5.52    C8.65,5.63,8.99,6.16,8.9,6.62C8.82,7.08,8.33,7.45,7.86,7.39C7.72,7.37,7.57,7.42,7.47,7.51C7.36,7.61,7.3,7.74,7.3,7.89    L7.29,9.45c0,0.28,0.22,0.5,0.5,0.5c0,0,0,0,0,0c0.28,0,0.5-0.22,0.5-0.5L8.3,8.36c0.77-0.15,1.45-0.78,1.59-1.57    C10.07,5.82,9.4,4.79,8.43,4.55z"/><path d="M7.81,10.39c0,0-0.01,0-0.01,0c-0.27,0-0.49,0.23-0.5,0.5c0,0.01,0,0.1,0,0.11c0,0.27,0.22,0.45,0.49,0.46    c0,0,0.01,0,0.01,0c0.27,0,0.49-0.25,0.5-0.52c0-0.01,0-0.07,0-0.08C8.29,10.59,8.08,10.39,7.81,10.39z"/></g></g></svg>
+                                    <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Stock_cut" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><g><circle cx="16" cy="16" fill="none" r="15" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="16" x2="16" y1="24" y2="26"/><path d="M16,22v-2.615   c0-1.441,0.877-2.736,2.215-3.271l0,0C19.897,15.441,21,13.812,21,12v0c0-2.761-2.239-5-5-5h0c-2.761,0-5,2.239-5,5v0" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
                                 </figure>
                             </a>
                         </li>

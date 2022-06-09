@@ -108,7 +108,7 @@
 
 
 
-/* slide-under */
+/* under-slide */
 #about{
     margin-top: 20px;
 }
@@ -228,10 +228,12 @@
 
 .slidelist1{
     white-space: nowrap;
+    font-size: 0;
 }
 
 .slidelist1 li{
     display: inline-block;
+    transition: all 0.8s;
 }
 
 .slidelist1 a{
@@ -261,11 +263,21 @@
     right: 0px;
 }
 
-.slidelist1[class="left"]:active~li{
-    transform: translateX(100%);
+#slide001:checked ~ .slidelist1 li{
+    transform: translateX(0%);
 }
-.slidelist1[class="right"]:active~li{
+#slide002:checked ~ .slidelist1 li{
     transform: translateX(-100%);
+}
+#slide003:checked ~ .slidelist1 li{
+    transform: translateX(-200%);
+}
+#slide004:checked ~ .slidelist1 li{
+    transform: translateX(-300%);
+}
+
+.slidebox input{
+    display: none;
 }
 
 
