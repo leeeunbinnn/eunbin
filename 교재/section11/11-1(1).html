@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --margin:16px;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header{
+            border: 1px solid black;
+            height: 100px;
+            margin-top: var(--margin);
+            
+        }
+
+        h1{
+            float: left;
+            height: 100px;
+            background-color: yellow;
+            width: 200px;
+            line-height: 100px;
+            text-align: center;
+        }
+        
+        nav{
+            float: right;
+            background-color: antiquewhite;
+            height: 100px;
+        }
+        nav ul{
+            background-color: yellow;
+            overflow: hidden;
+        }
+
+        nav li{
+            float: left;
+            padding: 0 4px;
+            margin-right: 0 8px;
+            line-height: 30px;
+
+        }
+        nav> ul:last-child{
+            margin-top: 40px;
+            background-color: orange;
+        }
+        main{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        main > section {
+            width: 738px;
+
+        }
+        
+        main > section > article{
+            height: 150px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-top: var(--margin);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>WEB-logo</h1>
+            <nav>
+                <ul>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                </ul>
+    
+                <ul>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+
+
+    <main>
+        <section>
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>
+    
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>
+    
+            <article>
+                <h2>Main Article</h2>
+                <p>
+                    ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Right aside</h3>
+            <p>
+                ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.
+            </p>
+            <label for="email"></label>
+            <input type="email" />
+            <button>mailto</button>
+            <div class="bannerbox">
+                <h2>TEXT</h2>
+                <p>banner</p>
+            </div>
+        </aside>
+    </main>
+   
+    <footer>
+        <p>HTML5 COPYRIGHT</p>
+    </footer>
+
+</body>
+</html>

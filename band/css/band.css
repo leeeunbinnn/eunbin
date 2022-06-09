@@ -1,0 +1,417 @@
+:root{
+    --background-color:#f6f8fa;
+    --login-green:#21c531;
+    --language-color:#666666;
+    --main-color:#222222;
+    --main-content-color:#444444;
+    --intro-more:#2ecc71;
+    --band-list-background:#eef0f3;
+    --footer-background:#2a3038;
+    --footer-font-color:#777777;
+}
+
+.header{
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 0 12px;
+}
+
+.header h1 {
+    width: 100px;
+    margin: 15px;
+    background-image: url(../img/spr_intro_2x.png);
+    background-position: 4px 241px;
+    background-size: 278px;
+}
+
+.link{
+    display: block;
+    height: 100%;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.header-nav{
+    margin-top: 16px;
+}
+
+.header-nav a{
+    margin-left: 35px;
+}
+
+.language{
+    display: inline-block;
+}
+
+.language a{
+    color: var(--language-color);
+}
+
+.language a:hover{
+    text-decoration: underline;
+}
+
+.header-register{
+    color: var(--main-color);
+}
+
+.header-register:hover{
+    text-decoration: underline;
+}
+
+.language-box{
+    width: 0px;
+    height: 0px;
+    border-top: 3px solid #777;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    z-index: 3;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.login{
+    width: 88px;
+    height: 35px;
+    background-color: var(--login-green);
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* main */
+#intro{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding-top: 80px;
+}
+
+.intro-left img{
+    width: 540px;
+}
+
+.intro-right{
+    margin: 35px;
+}
+
+.intro-right h2{
+    font-size: 48px;
+    color: var(--main-color);
+    font-weight: 500px;
+    margin-top: 80px;
+    line-height: 55px;
+}
+
+.intro-content{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-content-color);
+}
+
+.intro-button{
+    margin-top: 23px;
+}
+
+.intro-button div{
+    width: 340px;
+    height: 54px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+}
+
+.intro-login{
+    background-color: var(--login-green);
+    color:white;
+}
+
+.register{
+    background-color: white;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.intro-more{
+    margin-top: 30px;
+    color: var(--main-content-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.intro-more a{
+    color: var(--intro-more);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.introduce-top{
+    background-image: url(../img/bg_intro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.introduce-top h2{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.introduce-top p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.introduce-bottom{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-bottom li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+
+.introduce-bottom img{
+    width: 300px;
+    height: 160px;
+}
+
+.introduce-bottom h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.introduce-bottom p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-content-color);
+    margin-top: 14px;
+    line-height: 22px;
+}
+
+#band-list{
+    background-color: var(--band-list-background);
+    padding-bottom: 15px;
+}
+
+.list-heading{
+    padding-top: 50px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.list-heading h2{
+    color: var(--main-color);
+    font-weight: 400px;
+    display: inline-block;
+    font-size: 24px;
+    color: #222;
+}
+
+.list-heading a{
+    float: right;
+    color: var(--main-color);
+}
+
+.list-heading a:hover{
+    text-decoration: underline;
+}
+
+.bands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.bands li{
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.bands-content{
+    display: flex;
+    align-items: center;
+}
+
+.bands-content img{
+    width: 93px;
+    height: 93px;
+    margin-right: 15px;
+}
+
+.bands-about h3{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-first{
+    color: var(--main-content-color);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 389px;
+}
+
+.about-second{
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 8px;
+}
+
+
+.bands-more{
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+    line-height: 24px;
+    margin-top: 6px;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    z-index: 2;
+}
+
+.more-strong{
+    color: #333;
+    font-weight: 400;
+}
+
+
+#download{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 35px auto;
+    align-items: center;
+}
+.download-left{
+    display: flex;
+}
+
+.download-left figure{
+    background-image: url(../img/spr_intro_2x.png);
+    background-size: 232px;
+    background-position: 70px 0px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.download-content{
+    margin-top: 13px;
+}
+
+.download-left h3{
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.download-left p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--language-color);
+    margin-top: 8px;
+}
+
+.download-android figure{
+    background-image: url(../img/spr_intro_2x.png);
+    display: inline-block;
+    background-size: 231px;
+    height: 47px;
+    width: 160px;
+    margin-right: 15px;
+}
+
+.download-apple figure{
+    background-image: url(../img/spr_intro_2x.png);
+    display: inline-block;
+    background-size: 231px;
+    background-position: 0px 100px;
+    height: 47px;
+    width: 160px;
+}
+
+/* footer */
+.footer{
+    background-color: var(--footer-background);
+    overflow: hidden;
+}
+
+.footer-menu{
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.footer-menu a{
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.footer-menu li:hover{
+    text-decoration: underline;
+}
+
+.footer-menu li{
+    display: inline-block;
+    color:var(--footer-font-color);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer-accent{
+    color: #b3b3b3; 
+}
+
+.footer .copyright{
+    font-size: 13px;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 5px;
+    width: 1000px;
+    margin: 0px auto 30px;
+}

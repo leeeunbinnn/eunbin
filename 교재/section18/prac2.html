@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .animation-wrapper{
+            width: 250px;
+            height: 150px;
+            display: flex;
+        }
+        .animation-wrapper>div{
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+        }
+
+        .animation-wrapper>.stroke1{
+            height: 250px;
+            animation: an1 5s   infinite  alternate;
+        }
+
+        .animation-wrapper>.stroke2{
+            position: relative;
+            top: 50%;
+            transform: rotateY(-50%);
+            animation: an2 5s   infinite  alternate;
+        }
+        
+        .animation-wrapper>.stroke3{
+            height: 250px;
+            animation: an3 5s   infinite  alternate;
+        }
+
+        @keyframes an1 {
+            from{
+                height: 0;
+            }
+            20%{
+                height: 250px;
+            }
+        }
+        @keyframes an2 {
+            from {
+                width: 0;
+            }
+            20% {
+                width: 0;
+            }
+            40% {
+                width: 50px;
+            }
+            to {
+
+            } 
+        }
+        @keyframes an3{
+            from {
+                height: 0;
+            }
+            40% {
+                height: 0;
+            }
+            60% {
+                height: 250px;
+            }
+            to {
+
+            } 
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-wrapper">
+            <div class="stroke1"></div>
+            <div class="stroke2"></div>
+            <div class="stroke3"></div>
+        </div>
+    </div>
+</body>
+</html>

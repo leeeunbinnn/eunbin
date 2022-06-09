@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse</title>
+
+    <link rel="stylesheet" href="./css/converse.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>
+        <div id="header-top">
+            <div class="language-wrapper">
+                <a href="#">
+                    <figure>
+                        <img src="./img/korea.png" alt="">
+                    </figure>
+                    <p class="language">KR<span class="language-span">ㅣ</span>한국어</p>
+                </a>
+            </div>
+            <div class="header-slide">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                
+                <ul class="slidewrap">
+                    <li>
+                        <a>
+                            <label for="slide3" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NEW</h2>
+                                <p>PEANUTS 출시</p>
+                            </div>    
+                            <label for="slide2" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide1" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NEW</h2>
+                                <p>DRKSHDW TURBOWPN 출시</p> 
+                            </div>
+                            <label for="slide3" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide2" class="left"></label>
+                            <div class="slidecontent">
+                                <h2>NOTICE</h2>
+                                <p>로그인이 어려우실 경우 FAQ를 참조해주세요</p>
+                            </div>
+                            <label for="slide1" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <div class="nav-left">
+                <div class="logo">
+                    <a href="#">
+                        <figure>
+                            <img src="./img/converse-logo.png" alt="">
+                        </figure>
+                    </a>
+                </div>
+                <nav class="left-menu">
+
+                    <ul>
+                        <li>
+                            <a href="#">신발</a>
+                        </li>
+                        <li>
+                            <a href="#">의류</a>
+                        </li>
+                        <li>
+                            <a href="#">아동</a>
+                        </li>
+                        <li>
+                            <a href="#">런칭캘린더</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <nav>
+                    <ul class="right-icons">
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polyline fill="none" points="   649,137.999 675,137.999 675,155.999 661,155.999  " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><polyline fill="none" points="   653,155.999 649,155.999 649,141.999  " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><polyline fill="none" points="   661,156 653,162 653,156  " stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g><path d="M21.947,16.332C23.219,14.915,24,13.049,24,11c0-4.411-3.589-8-8-8s-8,3.589-8,8s3.589,8,8,8  c1.555,0,3.003-0.453,4.233-1.224c4.35,1.639,7.345,5.62,7.726,10.224H4.042c0.259-3.099,1.713-5.989,4.078-8.051  c0.417-0.363,0.46-0.994,0.097-1.411c-0.362-0.416-0.994-0.46-1.411-0.097C3.751,21.103,2,24.951,2,29c0,0.553,0.448,1,1,1h26  c0.553,0,1-0.447,1-1C30,23.514,26.82,18.615,21.947,16.332z M10,11c0-3.309,2.691-6,6-6s6,2.691,6,6s-2.691,6-6,6S10,14.309,10,11z  "/></svg>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <?xml version="1.0" ?><svg id="Outlined" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g id="Fill"><path d="M10,24a3,3,0,1,0,3,3A3,3,0,0,0,10,24Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,10,28Z"/><path d="M22,24a3,3,0,1,0,3,3A3,3,0,0,0,22,24Zm0,4a1,1,0,1,1,1-1A1,1,0,0,1,22,28Z"/><path d="M6.78,6,6.35,4.27A3,3,0,0,0,3.44,2H2V4H3.44a1,1,0,0,1,1,.76L8,19.24H8l.37,1.49A3,3,0,0,0,11.31,23H25V21H11.31a1,1,0,0,1-1-.76l-.12-.5L25,16.25a3,3,0,0,0,2.23-2.19l2-8.06Zm18.55,7.58a1,1,0,0,1-.75.73L9.73,17.8,7.28,8H26.72Z"/></g></svg>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Stock_cut" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><path d="M28.343,17.48L16,29  L3.657,17.48C1.962,15.898,1,13.684,1,11.365v0C1,6.745,4.745,3,9.365,3h0.17c2.219,0,4.346,0.881,5.915,2.45L16,6l0.55-0.55  C18.119,3.881,20.246,3,22.465,3h0.17C27.255,3,31,6.745,31,11.365v0C31,13.684,30.038,15.898,28.343,17.48z" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <?xml version="1.0" ?><svg enable-background="new 0 0 32 32" id="Stock_cut" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><g><circle cx="16" cy="16" fill="none" r="15" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="16" x2="16" y1="24" y2="26"/><path d="M16,22v-2.615   c0-1.441,0.877-2.736,2.215-3.271l0,0C19.897,15.441,21,13.812,21,12v0c0-2.761-2.239-5-5-5h0c-2.761,0-5,2.239-5,5v0" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#">
+                    <div class="search">
+                        <span>검색</span>
+                        <figure>
+                            <svg style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guide"/><g id="Layer_2"><path d="M13.85,13.15l-2.69-2.69c0.74-0.9,1.2-2.03,1.2-3.28C12.37,4.33,10.04,2,7.18,2S2,4.33,2,7.18s2.33,5.18,5.18,5.18   c1.25,0,2.38-0.46,3.28-1.2l2.69,2.69c0.1,0.1,0.23,0.15,0.35,0.15s0.26-0.05,0.35-0.15C14.05,13.66,14.05,13.34,13.85,13.15z    M3,7.18C3,4.88,4.88,3,7.18,3s4.18,1.88,4.18,4.18s-1.88,4.18-4.18,4.18S3,9.49,3,7.18z"/></g></svg>
+                        </figure>
+                    </div>    
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="intro-left">
+                <video src="https://video.bbsclub.kr/220527_SU22_FLOW2.mp4" autoplay muted loop controls></video>
+            </div>
+            <div class="intro-right">
+                <div class="intro-more">
+                    <a href="#">더 알아보기</a>
+                </div>
+            </div>
+        </section>
+        <section class="item-list">
+            <div class="items">
+                <h2 class="main-heading">Shop By Style</h2>
+                <a href="#">
+                    <figure>
+                        <img src="./img/top_banner_arrow_right.png" alt="">
+                    </figure>
+                    신상품 보러가기
+                </a>
+            </div>
+            <div class="newitem-box">
+                <a href="#">
+                    <figure>
+                        <img src="./img/newproduct1.jpg" alt="">
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/newproduct2.jpg" alt="">
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/newproduct3.jpg" alt="">
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/newproduct4.jpg" alt="">
+                    </figure>
+                </a>
+            </ul>
+        </section>
+        <section id="articles">
+            <article class="article1 articles-both">
+                <div class="article-content content1-position">
+                    <h3>CONBERSE X<br>COMME<br>des GARCONS</h3>
+                    <p>두 패션 아이콘의 콜라보레이션<br>컨버스 X 꼼데가르송 컬렉션 재입고</p>
+                    <div class="more-box">
+                        <a href="#">더 알아보기</a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article2-left article-box">
+                    <div class="article-content content2-position">
+                        <h3>SUMMER TEE</h3>
+                        <p>여름에 가장 떠오르는 편안한 핏의 티셔츠로 데일리룩을 완성해보세요</p>
+                        <div class="more-box">
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article2-right article-box"></div>
+            </article>
+            <article>
+                <div class="article3-left article-box"></div>
+                <div class="article3-right article-box">
+                    <div class="article-content content3-position">
+                        <p>컨버스의 새로운 풋웨어와 의류 컬랙션은 연재 만화 피너츠의<br>유머러스하고 긍정적이며 사랑스러운 캐릭터들을 기념합니다.</p>
+                        <div class="more-box">
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article4-left article-box">
+                    <div class="article-content content4-position">
+                        <h3>SUMMER TONES</h3>
+                        <p>자유롭게 움직일 수 있는 초경량 플랫폼으로<br>유행을 타지 않는 토널 배색의 룩으로 더욱 세련되게 완성된 데일리 스타일</p>
+                        <div class="more-box">
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article4-right article-box"></div>
+            </article>
+
+            <article>
+                <div class="article6-left article-box"></div>
+                <div class="article6-right article-box">
+                    <div class="article-content content6-position">
+                        <h3>MULE SPEACIAL</h3>
+                        <p>다가오는 여름에 어울리는 컨버스의 다양한 뮬 제품들을 만나보세요.</p>
+                        <div class="more-box">
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article7 articles-both">
+                    <div class="article-content">
+                        <p>꾸준히 사랑받은 컨버스 베스트 상품들을 만나보세요.</p>
+                        <div class="more-box">
+                            <a href="#">더 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article8 articles-both">
+                    <div class="more-box">
+                        <a href="#">더 알아보기</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="item-list">
+            <div class="items">
+                <h2 class="main-heading">Trending Style</h2>
+                <a href="#">
+                    <figure>
+                        <img src="./img/top_banner_arrow_right.png" alt="">
+                    </figure>
+                    베스트셀러 보기
+                </a>
+            </div>
+            <div class="bestseller-box">
+                <a href="#">
+                    <figure>
+                        <img src="./img/best1.jpg" alt="">
+                    </figure>
+                    <span>시즈널 컬러</span>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/best2.jpg" alt="">
+                    </figure>
+                    <span>온라인 온리</span>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/best3.jpg" alt="">
+                    </figure>
+                    <span>런스타</span>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="./img/best4.jpg" alt="">
+                    </figure>
+                    <span>런스타 모션</span>
+                </a>
+            </div>
+        </section>
+        <section id="explore">
+            <h2 class="main-heading">Explore Converse</h2>
+            <table class="table">
+                <tr>
+                    <td rowspan="2" class="td-left">
+                        <a href="#" class="main-table">    
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            여성<br>전체보기
+                        </a>
+                    </td>
+                    <td rowspan="2">
+                        <a href="#" class="main-table">
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            남성<br>전체보기
+                        </a>
+                    </td>
+                    <td rowspan="2">
+                        <a href="#" class="main-table">
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            아동<br>전체보기
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" class="small-td">
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            척 70
+                        </a>    
+                    </td>
+                    <td>
+                        <a href="#" class="small-td">
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            클래식 척
+                        </a>    
+                    </td>
+                    <td>
+                        <a href="#" class="small-td">
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            척테일러 올스타
+                        </a>    
+                    </td>
+                </tr>
+                <tr class="table-bottom">
+                    <td>
+                        <a href="#" class="small-td">    
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            한정판
+                        </a>    
+                    </td>
+                    <td>
+                        <a href="#" class="small-td">    
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            온라인 온리
+                        </a>    
+                    </td>
+                    <td>
+                        <a href="#" class="small-td">    
+                            <figure>
+                                <img src="./img/top_banner_arrow_right.png" alt="">
+                            </figure>
+                            빅사이즈
+                        </a>    
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="about">
+            <ul class="about-li">
+                <li>
+                    <svg data-name="Layer 3" id="Layer_3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#3c4044;stroke-linecap:round;stroke-linejoin:round;}</style></defs><title/><path class="cls-1" d="M22.94,9V22.6H13.28a2.42,2.42,0,0,0-4.83,0H6V9Z"/><path class="cls-1" d="M31,17.8v4.8H29.39a2.42,2.42,0,0,0-4.83,0H22.94V13h3.37Z"/><path class="cls-1" d="M31,17.8v4.8H29.39a2.42,2.42,0,0,0-4.83,0H22.94V17.8Z"/><ellipse class="cls-1" cx="10.86" cy="22.6" rx="2.42" ry="2.4"/><ellipse class="cls-1" cx="26.97" cy="22.6" rx="2.42" ry="2.4"/><line class="cls-1" x1="1" x2="3.61" y1="10.6" y2="10.6"/><line class="cls-1" x1="1" x2="3.61" y1="13.8" y2="13.8"/><line class="cls-1" x1="1" x2="3.61" y1="17" y2="17"/></svg>
+                    <h4>무료배송</h4>
+                    <p>5만원 이상 구매 시 무료배송</p>
+                </li>
+                <li>
+                    <svg data-name="레이어 1" id="레이어_1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M30.91,4.26a7.2,7.2,0,1,0,7.19,7.2A7.21,7.21,0,0,0,30.91,4.26Zm0,12.59a5.4,5.4,0,1,1,5.39-5.39A5.4,5.4,0,0,1,30.91,16.85Z"/><path d="M29.6,11.71a.59.59,0,0,0,.42-1l-.47-.48,4,0h0a.68.68,0,0,0,.68-.67.67.67,0,0,0-.67-.67l-4,0L30,8.43a.6.6,0,0,0,0-.83.57.57,0,0,0-.82,0L27.67,9.17a.58.58,0,0,0,0,.81l1.51,1.55A.56.56,0,0,0,29.6,11.71Z"/><path d="M32.73,11.38a.59.59,0,0,0-.83,0,.59.59,0,0,0,0,.83l.45.46-3.88,0a.68.68,0,0,0-.67.68.67.67,0,0,0,.67.67h0l3.89,0-.47.48a.59.59,0,0,0,0,.83.61.61,0,0,0,.41.16.57.57,0,0,0,.42-.17l1.51-1.55a.59.59,0,0,0,0-.82Z"/><path d="M31.6,20.1a.9.9,0,0,0-.9.9V32.74a.89.89,0,0,1-.89.9h-25a.89.89,0,0,1-.89-.9V14.84a.89.89,0,0,1,.89-.9h8v5.24a.9.9,0,0,0,.9.9h7.15a.89.89,0,0,0,.89-.9V13.94h.61a.9.9,0,0,0,0-1.8H4.79a2.7,2.7,0,0,0-2.69,2.7v17.9a2.7,2.7,0,0,0,2.69,2.7h25a2.7,2.7,0,0,0,2.69-2.7V21A.9.9,0,0,0,31.6,20.1ZM20,18.28H14.63V13.94H20Z"/><path d="M10.79,27.92l-3.58,0a.91.91,0,0,0-.89.9h0a.89.89,0,0,0,.9.89h0l3.58,0a.9.9,0,0,0,.89-.9h0a.89.89,0,0,0-.9-.89Z"/></svg>
+                    <h4>교환/반품 서비스</h4>
+                    <p>사이즈를 잘못 선택하셨나요?<br>교환/반품 서비스에 대해<br>더 알아보세요.</p>
+                    <a href="#">자세히 보기</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./img/다운로드.png" alt="">
+                    </figure>
+                    <h4>회원 전용 혜택</h4>
+                    <p>신규 가입 축하 쿠폰, 드로우 응모 등<br>지금 회원 가입 하시고<br>더욱 특별한 혜택을 누려보세요.</p>
+                    <a href="#">회원 가입 하기</a>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="media-icon">
+                            <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                        </a>
+                        <a href="#" class="media-icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+                                <g>
+                                    <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                                        c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                                    <circle cx="41.5" cy="16.4" r="2.9"/>
+                                    <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                                        h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                                        s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                                        c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <h5 class="media-heading">Follow Us</h5>
+                    <p>컨버스의 SNS 채널을 통해<br>신상품 정보 및 이벤트 등 새로운 소식을<br>확인하세요.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-top">
+            <div class="footer-box">
+                <h4>FOLLOW US</h4>
+                <div class="footer-icon">
+                    <a href="#">
+                        <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                    </a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+                            <g>
+                                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                                    c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                                <circle cx="41.5" cy="16.4" r="2.9"/>
+                                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                                    h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                                    s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                                    c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <a href="#">
+                        <li>고객지원센터</li>
+                    </a>
+                    <a href="#">
+                        <li>1:1문의</li>
+                    </a>
+                    <a href="#">
+                        <li>주문/배송 조회</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-box">    
+                <h4>INFORMATION</h4>
+                <ul>
+                    <a href="#">
+                        <li>컨버스에 대하여</li>
+                    </a>
+                    <a href="#">
+                        <li>회원가입</li>
+                    </a>
+                    <a href="#">
+                        <li>매장안내</li>
+                    </a>
+                    <a href="#">
+                        <li>공지사항</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>POLICY</h4>
+                <ul>
+                    <a href="#">
+                        <li>이용약관</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <b>개인정보처리방침</b>
+                        </li>
+                    </a>
+                </ul>
+            </div>    
+            <div class="footer-box">
+                <h4>FAMILY SITES</h4>
+                <ul>
+                    <a href="#">
+                        <li>NIKE</li>
+                    </a>
+                    <a href="#">
+                        <li>Jordan</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="footer-wrapper">
+                <div>
+                    <div class="company">
+                        <a href="#"><span>(유)컨버스코리아</span></a>
+                        <span>대표 주형준</span>
+                        <span>개인정보책임 주형준</span>
+                        <span>사업자등록번호 220-88-74818</span>
+                        <br>
+                        <span>통신판매업 신고번호 제2016-서울강남-00478호</span>
+                        <a href="#"><span>통신판매업자 신원정보 확인</span></a>
+                        <p>
+                            주소 서울특별시 강남구 테헤란로 152 (역삼동) 강남파이낸스센터 32층
+                            <br>
+                            고객상담팀: 080-987-0182 (상담시간 월-금 : AM 09:00 - PM 05:30, 주말/공휴일 휴무)
+                            <a href="#">conversekorea@converse.co.kr</a>(24시간 접수 가능)
+                        </p>
+                    </div>
+                    <div class="copyright">2020 Converse Korea LLC. All Rights Reserved.</div>
+                </div>
+                <div>
+                    <p>
+                        KG이니시스 구매안전 서비스
+                        <br>
+                        고객님은 안전거래를 위해 현금 등으로 결제시
+                        <br>
+                        저희 쇼핑몰이 가입한 PG에스크로 구매안전서비스를 이용하실 수 있습니다.
+                        <br>
+                        결제대금예치업 등록번호 02-006-00013
+                        <br>
+                        <a href="#">서비스 가입사실 확인</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
