@@ -1,0 +1,207 @@
+.nav-box{
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.nav-box ul{
+    max-width: 996px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f7;
+    font-size: 12px;
+}
+
+.nav-box li{
+    position: relative;
+}
+
+.nav-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.nav-back{
+    display: inline-block;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+}
+
+.nav-back:hover{
+    opacity: 1;
+}
+
+.nav-apple{
+    background-image: url(../img/nav_apple_large.svg);
+    width: 30px;
+}
+
+.nav-store{
+    background-image: url(../img/nav_store_large.svg);
+    width: 30px;
+}
+
+.nav-mac{
+    background-image: url(../img/nav_mac_large.svg);
+    width: 30px;
+}
+
+.nav-ipad{
+    background-image: url(../img/nav_ipad_large.svg);
+    width: 30px;
+}
+
+.nav-watch{
+    background-image: url(../img/nav_watch_large.svg);
+    width: 35px;
+}
+
+.nav-airpods{
+    background-image: url(../img/nav_airpod_large.svg);
+    width: 45px;
+}
+
+.nav-tvhome{
+    background-image: url(../img/nav_tvhome_large.svg);
+    width: 40px;
+}
+
+.nav-onlyapple{
+    background-image: url(../img/nav_onlyapple_large.svg);
+    width: 78px;
+}
+
+.nav-acc{
+    background-image: url(../img/nav_acc_large.svg);
+    width: 40px;
+}
+
+.nav-support{
+    background-image: url(../img/nav_support_large.svg);
+    width: 40px;
+}
+
+.nav-search{
+    background-image: url(../img/nav_search_large.svg);
+    background-position-y: 0px;
+    width: 30px;
+}
+
+.nav-bag{
+    background-image: url(../img/nav_bag_large.svg);
+    width: 30px;
+}
+
+.pc-hidden{
+    display: none;
+}
+
+.hamburger{
+    width: 30px;
+    height: 40px;
+    background-color: wheat;
+}
+
+@media screen and (max-width: 833px) {
+    .nav-box ul{
+        height: 48px;
+    }
+    
+    .mobile-hidden{
+        display: none;
+    }
+
+    .pc-hidden{
+        display: block;
+    }
+}
+
+#menu{
+    background-color: black;
+    padding: 10px 0;
+}
+
+.menu-box{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu-box li{
+    margin: 0 15px;
+}
+
+.menu-box span{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #f5f5f7;
+}
+
+.menu-box figure{
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 60px;
+    margin-bottom: 4px;
+}
+
+.new{
+    color: #f56300;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.menu-ipadpro{
+    background-image: url(../img/menu_ipadpro_large.svg);
+}
+
+.menu-ipadair{
+    background-image: url(../img/menu_ipadair_large.svg);
+}
+
+.menu-ipad{
+    background-image: url(../img/menu_ipad_large.svg);
+}
+
+.menu-ipadmini{
+    background-image: url(../img/menu_ipadmini_large.svg);
+}
+
+.menu-compare{
+    background-image: url(../img/menu_compare_large.svg);
+}
+
+.menu-applepencil{
+    background-image: url(../img/menu_apple_pencil_large.svg);
+}
+
+.menu-keyboard{
+    background-image: url(../img/menu_keyboard_large.svg);
+}
+
+.menu-airpods{
+    background-image: url(../img/menu_airpods_large.svg);
+}
+
+.menu-acc{
+    background-image: url(../img/menu_acc_large.svg);
+}
+
+.menu-ipados{
+    background-image: url(../img/munu_ipadOS_large.svg);
+}
+
+.menu-ipadshop{
+    background-image: url(../img/menu_ipad_shopping_large.svg);
+}
