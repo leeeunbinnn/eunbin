@@ -110,10 +110,19 @@
     display: none;
 }
 
-.hamburger{
+.hamburger-wrap{
     width: 30px;
     height: 40px;
-    background-color: wheat;
+    position: relative;
+}
+
+.hamburger{
+    width: 15px;
+    height: 8px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 16px;
 }
 
 @media screen and (max-width: 833px) {
@@ -177,6 +186,10 @@ body{
     font-weight: 400;
     text-align: center;
     margin-top: 3px;
+}
+
+.air-device-content .new{
+    font-size: 13px;
 }
 
 .menu-ipadpro{
@@ -351,7 +364,7 @@ articleeeeee
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 6px;
-    line-height: 37px;
+    line-height: 40px;
 }
 
 .device-more{
@@ -360,6 +373,10 @@ articleeeeee
 
 .more-after{
     color: #2997ff;
+}
+
+.more-after:hover{
+    text-decoration: underline;
 }
 
 .more-after::after{
@@ -435,3 +452,403 @@ articleeeeee
 }
 
 
+
+/* compare-grid */
+#compare{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 30px;
+}
+
+#compare h2{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    padding: 100px 0;
+    letter-spacing: -2px;
+}
+
+.compare-grid{
+    margin: 0 180px;
+    display: grid;
+    grid-template-rows: repeat(9,auto);
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 38px;
+    column-gap: 50px;
+    grid-template-areas: 
+    "pro-content air-content ipad-content mini-content"
+    "pro-display air-display ipad-display mini-display"
+    "pro-chip air-chip ipad-chip mini-chip"
+    "pro-camera-back air-camera-back ipad-camera-back mini-camera-back"
+    "pro-camera-front air-camera-front ipad-camera-front mini-camera-front"
+    "pro-connecter air-connecter ipad-connecter mini-connecter"
+    "pro-cellular air-cellular ipad-cellular mini-cellular"
+    "pro-pencil air-pencil ipad-pencil mini-pencil"
+    "pro-keyboard air-keyboard ipad-keyboard mini-keyboard";
+
+}
+
+.content, .keyboard{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.keyboard{
+    padding-bottom: 60px;
+}
+
+.compare-device-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.compare-color{
+    margin-top: 18px;
+}
+
+.compare-device-content h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.compare-device-content p{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.compare-price{
+    margin-top: 13px;
+}
+
+.compare-device-content .compare-button{
+    height: 24px;
+    width: 60px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 6px;
+}
+
+.compare-more{
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.compare-more .more-after:after{
+    position: absolute;
+    top: 4px;
+}
+
+.compare-heading{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.compare-content{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.grid-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* background-image */
+.compare-2color{
+    background-image: url(../img/pro_ipad_color_large.png);
+    width: 32px;
+    height: 14px;
+}
+
+.compare-5color{
+    background-image: url(../img/air_color_large.png);
+    width: 85px;
+    height: 14px;
+}
+
+.compare-4color{
+    background-image: url(../img/mini_color_large.png);
+    width: 68px;
+    height: 14px;
+}
+
+.compare-pro-image{
+    background-image: url(../img/ipad_pro_large.png);
+    width: 189px;
+    height: 214px;
+}
+
+.compare-air-image{
+    background-image: url(../img/ipad_air_large.png);
+    width: 136px;
+    height: 188px;
+}
+
+.compare-ipad-image{
+    background-image: url(../img/ipad_large.png);
+    width: 133px;
+    height: 191px;
+}
+
+.compare-mini-image{
+    background-image: url(../img/ipad_mini_large.png);
+    width: 103px;
+    height: 149px;
+}
+
+
+.m1-chip{
+    background-image: url(../img/m1_chip_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.a13-chip{
+    background-image: url(../img/ipad_a13_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.a15-chip{
+    background-image: url(../img/mini_a15_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.pro-camera{
+    background-image: url(../img/pro_camera_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.air-camera{
+    background-image: url(../img/air_camera_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.ipad-camera{
+    background-image: url(../img/ipad_camera_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.mini-camera{
+    background-image: url(../img/mini_camera_large.png);
+    width: 38px;
+    height: 38px;
+}
+
+.pro-connecter{
+    background-image: url(../img/pro_usb_connecter_large.png);
+    width: 41px;
+    height: 22px;
+}
+
+.air-connecter,.mini-connecter{
+    background-image: url(../img/usb_c_connecter_large.png);
+    width: 32px;
+    height: 22px;
+}
+
+.ipad-connecter{
+    background-image: url(../img/ipad_connecter_large.png);
+    width: 32px;
+    height: 22px;
+}
+
+.cellular-5g{
+    background-image: url(../img/cellular_5g_large.png);
+    width: 48px;
+    height: 35px;
+}
+
+.cellular-4g{
+    background-image: url(../img/cellular_4g_large.png);
+    width: 48px;
+    height: 35px;
+}
+
+.pencil-image{
+    background-image: url(../img/pencil_large.png);
+    width: 62px;
+    height: 6px;
+}
+
+.pro-keyboard, .air-keyboard{
+    background-image: url(../img/magic_keyboard_large.png);
+    width: 68px;
+    height: 49px;
+}
+
+.ipad-keyboard{
+    background-image: url(../img/ipad_keyboard_large.png);
+    width: 68px;
+    height: 49px;
+}
+
+.mini-keyboard{
+    background-image: url(../img/mini_keyboard_large.png);
+    width: 68px;
+    height: 49px;
+}
+
+/* grid-area */
+.ipad-pro.content{
+    grid-area: pro-content;
+}
+
+.ipad-pro.display{
+    grid-area: pro-display;
+}
+
+.ipad-pro.chip{
+    grid-area: pro-chip;
+}
+
+.ipad-pro.camera-back{
+    grid-area: pro-camera-back;
+}
+
+.ipad-pro.camera-front{
+    grid-area: pro-camera-front;
+}
+
+.ipad-pro.connecter{
+    grid-area: pro-connecter;
+}
+
+.ipad-pro.cellular{
+    grid-area: pro-cellular;
+}
+
+.ipad-pro.pencil{
+    grid-area: pro-pencil;
+}
+
+.ipad-pro.keyboard{
+    grid-area: pro-keyboard;
+}
+/*  */
+.ipad-air.content{
+    grid-area: air-content;
+}
+
+.ipad-air.display{
+    grid-area: air-display;
+}
+
+.ipad-air.chip{
+    grid-area: air-chip;
+}
+
+.ipad-air.camera-back{
+    grid-area: air-camera-back;
+}
+
+.ipad-air.camera-front{
+    grid-area: air-camera-front;
+}
+
+.ipad-air.connecter{
+    grid-area: air-connecter;
+}
+
+.ipad-air.cellular{
+    grid-area: air-cellular;
+}
+
+.ipad-air.pencil{
+    grid-area: air-pencil;
+}
+
+.ipad-air.keyboard{
+    grid-area: air-keyboard;
+}
+/*  */
+.ipad.content{
+    grid-area: ipad-content;
+}
+
+.ipad.display{
+    grid-area: ipad-display;
+}
+
+.ipad.chip{
+    grid-area: ipad-chip;
+}
+
+.ipad.camera-back{
+    grid-area: ipad-camera-back;
+}
+
+.ipad.camera-front{
+    grid-area: ipad-camera-front;
+}
+
+.ipad.connecter{
+    grid-area: ipad-connecter;
+}
+
+.ipad.cellular{
+    grid-area: ipad-cellular;
+}
+
+.ipad.pencil{
+    grid-area: ipad-pencil;
+}
+
+.ipad.keyboard{
+    grid-area: ipad-keyboard;
+}
+/*  */
+.ipad-mini.content{
+    grid-area: mini-content;
+}
+
+.ipad-mini.display{
+    grid-area: mini-display;
+}
+
+.ipad-mini.chip{
+    grid-area: mini-chip;
+}
+
+.ipad-mini.camera-back{
+    grid-area: mini-camera-back;
+}
+
+.ipad-mini.camera-front{
+    grid-area: mini-camera-front;
+}
+
+.ipad-mini.connecter{
+    grid-area: mini-connecter;
+}
+
+.ipad-mini.cellular{
+    grid-area: mini-cellular;
+}
+
+.ipad-mini.pencil{
+    grid-area: mini-pencil;
+}
+
+.ipad-mini.keyboard{
+    grid-area: mini-keyboard;
+}
