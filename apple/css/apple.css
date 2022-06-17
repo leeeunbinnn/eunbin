@@ -457,7 +457,7 @@ articleeeeee
 .mini-image{
     background-image: url(../img/article_mini_medium.jpg);
     background-size: 503px 579px;
-    background-position-y: 120px;
+    background-position-y: 140px;
 }
 
 
@@ -576,6 +576,7 @@ articleeeeee
     text-align: center;
     line-height: 20px;
     margin-top: 10px;
+    position: relative;
 }
 
 .grid-flex{
@@ -586,6 +587,8 @@ articleeeeee
 
 .small-num{
     font-size: 10px;
+    position: absolute;
+    top: -2px;
 }
 
 
@@ -1061,12 +1064,12 @@ articleeeeee
     padding-bottom: 50px;
     font-size: 12px;
     font-weight: 400;
+    color: var(--footer-text-color);
 }
 
 .footer-top{
     line-height: 15px;
     border-bottom: 1px solid var(--footer-border-color);
-    color: var(--footer-text-color);
     padding-bottom: 15px;
 }
 
@@ -1146,3 +1149,31 @@ articleeeeee
 .footer-nav li:hover{
     text-decoration: underline;
 }
+
+.way-to-shop{
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--footer-border-color);
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.copyright ul a{
+    color: var(--footer-link-color);
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+.copyright ul li{
+    border-left: 1px solid var(--footer-border-color);
+    padding-right: 8px;
+}
+
+
+.korea{
+    color: var(--footer-link-color);
+}
+
