@@ -30,7 +30,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+	
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -48,12 +51,15 @@ table {
 }
 
 a{
-	display: block;
 	text-decoration: none;
 }
 
-img{
-	display: block;
-	width: 100%;
+*{
+	box-sizing: border-box;
 }
 
+body{
+	color: #1d1d1f;
+	font-size: 17px;
+    font-weight: 400;
+}
