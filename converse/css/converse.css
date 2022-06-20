@@ -5,8 +5,13 @@
 
 #header-top{
     height: 70px;
-    position: relative;
     background-color: var(--header-top-background);
+}
+
+.header-content-box{
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .language-wrapper{
@@ -116,6 +121,9 @@
     width: 1440px;
     height: 60px;
     margin: 0 auto;
+    position: sticky;
+    top: 40px;
+    background-color: white;
 }
 
 .nav-left{
@@ -268,10 +276,17 @@
 .newitem-box a{
     display: block;
     width: 25%;
+    background-color: black;
 }
 
 .newitem-box img{
     width: 100%;
+    display: block;
+}
+
+.newitem-box img:hover{
+    opacity: 0.9;
+    transition: all .8s;
 }
 
 
@@ -315,6 +330,11 @@
     line-height: 45px;
     border: 2px solid black;
     margin-top: 12px;
+    transition: all .3s;
+}
+
+.more-box:hover{
+    opacity: 0.7;
 }
 
 
@@ -460,15 +480,23 @@
 .bestseller-box{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 .bestseller-box a{
     width: 25%;
     position: relative;
+    transition: all .8s;
+    margin-bottom: -4px;
+}
+
+.bestseller-box img:hover{
+    opacity: 0.7;
 }
 
 .bestseller-box img{
     width: 100%;
+    display: block;
 }
 
 .bestseller-box span{
@@ -523,6 +551,10 @@
 
 .table a{
     padding: 30px 20px 30px 60px;
+}
+
+.table a:hover{
+    text-decoration: underline;
 }
 
 td.td-left{
@@ -596,6 +628,46 @@ td.td-left{
     margin-top: 18px;
 }
 
+/* sidebox */
+.sidebox{
+    width: 185px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px 0px 0px 50px;
+    position: fixed;
+    bottom: 30px;
+    right: -120px;
+    transition: all .4s;
+}
+
+.sidebox:hover{
+    transform: translateX(-120px);
+}
+
+.sidebox a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+.sidebox figure{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sidebox img{
+    width: 40px;
+}
+
+.sidebox span{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 
 /* footer */
 #footer-top{
@@ -627,11 +699,16 @@ td.td-left{
     width: 50px;
     height: 50px;
     border: 1px solid #e5e5e5;
+    position: relative;
     display: inline-block;
 }
 
 .footer-icon svg{
     width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
 }
 
 .footer-box ul a{
