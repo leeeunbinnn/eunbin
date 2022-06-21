@@ -278,6 +278,7 @@ articleeeeee
     width: 980px;
     margin: 0 auto;
     height: 100%;
+    overflow: hidden;
 }
 
 .row{
@@ -404,8 +405,9 @@ articleeeeee
     transform: rotate(45deg);
 }
 
+
+/* article-image */
 .device-image figure{
-    height: 100%;
     background-repeat: no-repeat;
 }
 
@@ -420,6 +422,8 @@ articleeeeee
 .air-image{
     background-image: url(../img/intro_ipad_air_medium.jpg);
     background-size: 680px 695px;
+    width: 680px;
+    height: 695px;
 }
 
 .pro-device-image{
@@ -435,6 +439,7 @@ articleeeeee
     background-image: url(../img/article_ipad_pro_medium.jpg);
     background-size: 1335px 598px;
     width: 1335px;
+    height: 598px;
 }
 
 .ipad-device-content{
@@ -450,6 +455,7 @@ articleeeeee
     background-size: 856px 813px;
     background-position-y: -70px;
     width: 856px;
+    height: 813px;
 }
 
 .mini-device-image{
@@ -463,7 +469,9 @@ articleeeeee
 .mini-image{
     background-image: url(../img/article_mini_medium.jpg);
     background-size: 503px 579px;
-    background-position-y: 140px;
+    width: 503px;
+    height: 579px;
+    margin-top: 130px;
 }
 
 
@@ -473,11 +481,14 @@ articleeeeee
     max-width: 1440px;
     padding: 0 30px;
     margin: 0 auto;
+}
+
+.compare-box{
     background-color: white;
     margin-top: 30px;
 }
 
-#compare h2{
+.compare-box h2{
     text-align: center;
     font-size: 56px;
     font-weight: 600;
@@ -510,8 +521,8 @@ articleeeeee
         max-width: 500px;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(18,auto);
-        row-gap: 40px;
-        column-gap: 40px;
+        row-gap: 10px;
+        column-gap: 30px;
         grid-template-areas: 
         "pro-content air-content"
         "pro-display air-display"
@@ -935,8 +946,8 @@ articleeeeee
     content: "";
     width: 8px;
     height: 8px;
-    border-top: 1px solid #2997ff;
-    border-right: 1px solid #2997ff;
+    border-top: 1px solid #0066cc;
+    border-right: 1px solid #0066cc;
     position: absolute;
     right: -9px;
     top: 8px;
@@ -1000,8 +1011,9 @@ articleeeeee
 
 .apple-p{
     line-height: 30px;
-    margin: 13px 226px 10px;
+    margin: 13px auto;
     max-width: 450px;
+    word-spacing: -1px;
 }
 
 
@@ -1015,7 +1027,7 @@ articleeeeee
     background-repeat: no-repeat;
     background-size: 356px 348px;
     background-position: 190px 160px;
-    height: 100%;
+    height: 502px;
     width: 600px;
 }
 
@@ -1059,8 +1071,13 @@ articleeeeee
     margin: 0 70px;
 }
 
-@media screen and (max-width:734px) {
+@media screen and (max-width:1068px) {
     .apple-onlyapple{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .apple-onlyapple div{
         width: 100%;
     }
 }
@@ -1115,6 +1132,7 @@ articleeeeee
     line-height: 15px;
     border-bottom: 1px solid var(--footer-border-color);
     padding-bottom: 15px;
+    text-align: justify;
 }
 
 .footer-top p{
