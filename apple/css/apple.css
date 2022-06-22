@@ -969,7 +969,6 @@ articleeeeee
 
 #apple-article article{
     background-color: white;
-    height: 502px;
     margin-top: 20px;
     display: flex;
     overflow: hidden;
@@ -977,6 +976,7 @@ articleeeeee
 
 #apple-article article:last-child{
     background-color: #f5f5f7;
+    margin: 80px 20px;
 }
 
 .apple-credit{
@@ -1023,14 +1023,39 @@ articleeeeee
 }
 
 .apple-credit-image{
-    background-image: url(../img/trade_in_medium.jpg);
+    background-image: url(../img/trade_in_large.jpg);
     background-repeat: no-repeat;
     background-size: 356px 348px;
-    background-position: 190px 160px;
-    height: 502px;
-    width: 600px;
+    height: 356px;
+    width: 356px;
+    margin-top: 116px;
+    margin-left: 60px;
 }
 
+@media screen and (max-width:1068px) {
+    #apple-article{
+        padding: 0px 30px;
+    }
+    .apple-credit-image{
+        width: 437px;
+        height: 385px;
+        background-size: 237px 235px;
+        background-image: url(../img/trade_in_medium.jpg);
+    }
+    .apple-credit .apple-content{
+        width: 50%;
+    }
+    .credit-image-box{
+        width: 50%;
+    }
+    .apple-title{
+        font-size: 32px;
+        left: 42px;
+    }
+    .apple-p{
+        margin: 0px 40px 20px 40px;
+    }
+}
 
 .os16-image-box{
     width: 100%;
@@ -1044,6 +1069,15 @@ articleeeeee
     height: 359px;
     margin-left: 108px;
     margin-top: -24px;
+}
+
+@media screen and (max-width:1068px) {
+    .apple-os16-image{
+        width: 672px;
+        height: 350px;
+        background-size: 700px 270px;
+        margin-top: 0;
+    }
 }
 
 .apple-more{
@@ -1061,14 +1095,9 @@ articleeeeee
     top: 7px;
 }
 
-.apple-onlyapple{
-    padding: 100px 0;
-}
-
 .apple-onlyapple div{
     width: 33.3%;
     text-align: center;
-    margin: 0 70px;
 }
 
 @media screen and (max-width:1068px) {
@@ -1079,6 +1108,7 @@ articleeeeee
 
     .apple-onlyapple div{
         width: 100%;
+        margin-top: 50px;
     }
 }
 
